@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IResource"
+            id="OliveCommands.contribution1">
+         <menu
+               label="%oliveCommandsMenuLabel"
+               path="additions"
+               id="OliveCommands.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="%copyPathActionLabel"
+               class="olivecommands.popup.actions.CopyResourcePathsAction"
+               menubarPath="OliveCommands.menu1/group1"
+               enablesFor="+"
+               id="olivecommands.popup.actions.CopyResourcePathsAction">
+         </action>
+         <action
+               label="%openByWindowsExplorerActionLabel"
+               class="olivecommands.popup.actions.OpenByWindowsExplorerAction"
+               menubarPath="OliveCommands.menu1/group1"
+               enablesFor="+"
+               id="olivecommands.popup.actions.OpenByWindowsExplorerAction">
+         </action>
+         <action
+               label="%selectInWindowsExplorerActionLabel"
+               class="olivecommands.popup.actions.SelectInWindowsExplorerAction"
+               menubarPath="OliveCommands.menu1/group1"
+               enablesFor="+"
+               id="olivecommands.popup.actions.SelectInWindowsExplorerAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
