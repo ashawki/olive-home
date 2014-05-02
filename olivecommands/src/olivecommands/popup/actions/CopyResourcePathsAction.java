@@ -19,7 +19,7 @@ public class CopyResourcePathsAction implements IObjectActionDelegate {
 	protected ISelection selection;
 
 	/**
-	 * Constructor for Action1.
+	 * Constructor for CopyResourcePathsAction.
 	 */
 	public CopyResourcePathsAction() {
 		super();

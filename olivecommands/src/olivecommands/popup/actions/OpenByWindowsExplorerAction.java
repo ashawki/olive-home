@@ -24,7 +24,7 @@ public class OpenByWindowsExplorerAction implements IObjectActionDelegate {
 	protected ISelection selection;
 
 	/**
-	 * Constructor for Action1.
+	 * Constructor for OpenByWindowsExplorerAction.
 	 */
 	public OpenByWindowsExplorerAction() {
 		super();

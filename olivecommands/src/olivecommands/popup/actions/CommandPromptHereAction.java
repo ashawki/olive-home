@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import olivecommands.OliveCommandsUtil;
 
+import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.jface.action.IAction;
 import org.eclipse.jface.viewers.ISelection;
@@ -14,15 +15,15 @@ import org.eclipse.ui.IObjectActionDelegate;
 import org.eclipse.ui.IWorkbenchPart;
 import org.eclipse.ui.statushandlers.StatusManager;
 
-public class SelectInWindowsExplorerAction implements IObjectActionDelegate {
+public class CommandPromptHereAction implements IObjectActionDelegate {
 
 	private Shell shell;
 	protected ISelection selection;
 
 	/**
-	 * Constructor for SelectInWindowsExplorerAction.
+	 * Constructor for CommandPromptHereAction.
 	 */
-	public SelectInWindowsExplorerAction() {
+	public CommandPromptHereAction() {
 		super();
 	}
 
@@ -48,7 +49,7 @@ public class SelectInWindowsExplorerAction implements IObjectActionDelegate {
 				if (object1 instanceof IResource) {
 					IResource resource1 = (IResource)object1;
 					try {
-						Runtime.getRuntime().exec(new String[] { "EXPLORER.EXE", "/select," + resource1.getLocation().toOSString() });
+						Runtime.getRuntime().exec(new String[] { "CMD.EXE", "/C", "START" }, null, ((resource1 instanceof IFile) ? (resource1.getParent().getLocation().toFile()) : (resource1.getLocation().toFile())));
 					} catch (IOException e) {
 						OliveCommandsUtil.statusManager_handleError(e, StatusManager.LOG);
 					}

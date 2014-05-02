@@ -16,6 +16,13 @@
             </separator>
          </menu>
          <action
+               label="%commandPromptHereActionLabel"
+               class="olivecommands.popup.actions.CommandPromptHereAction"
+               menubarPath="OliveCommands.menu1/group1"
+               enablesFor="+"
+               id="olivecommands.popup.actions.CommandPromptHereAction">
+         </action>
+         <action
                label="%copyPathActionLabel"
                class="olivecommands.popup.actions.CopyResourcePathsAction"
                menubarPath="OliveCommands.menu1/group1"
