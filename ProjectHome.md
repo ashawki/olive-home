@@ -1,6 +1,6 @@
 **Olive Home Projects**
 
-  1. **olivecommands**: a plugin for Eclipse IDE in Windows environment only. It provides four convenient commands for file-system resources:
+**olivecommands**: a plugin for Eclipse IDE in Windows environment only. It provides four convenient commands for file-system resources:
     * Select In Windows Explorer (works for single selection only)
     * Open by Windows Explorer (works for multi-selection)
     * Copy Path(s) (works for multi-selection)
