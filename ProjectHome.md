@@ -7,7 +7,6 @@
     * Command Prompt Here (works for single selection only)
 
 To **download** the latest version of "olivecommands" (1.0.0.201405021411):
-  * Use "Browse" link of "Source" tab (above).
-  * By using the left folders tree, browse to git/olivecommands/build/plugins folder.
+  * Browse in "master" branch to olivecommands/build/plugins folder.
   * Download "olivecommands\_1.0.0.201405021411.jar" file.
-Or, simply, use the following link: [olivecommands\_1.0.0.201405021411.jar](https://olive-home.googlecode.com/git/olivecommands/build/plugins/olivecommands_1.0.0.201405021411.jar)
+Or, simply, use the following link: [olivecommands\_1.0.0.201405021411.jar](https://github.com/ashawki/olive-home/blob/master/olivecommands/build/plugins/olivecommands_1.0.0.201405021411.jar)
